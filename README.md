@@ -1,24 +1,30 @@
 # vue-carbonbadge
+Vue component for the [Website Carbon badge](https://www.websitecarbon.com/badge/).
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+## Installation
+```shell
+npm install vue-carbonbadge
+yarn add vue-carbonbadge
 ```
 
-### Compiles and minifies for production
+## How To Use
+**1. Import the package into your main.js file**
+```js
+import CarbonBadge from 'vue-carbonbadge'
+Vue.use(CarbonBadge)
 ```
-npm run build
+**2. Use it in your HTML markup**
+```html
+<footer>
+    <CarbonBadge></CarbonBadge>
+</footer>
+```
+**3. You're done! 🎉**
+
+## Customization
+**Toggling dark mode**
+```html
+<CarbonBadge :dark="true"></CarbonBadge>
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+If the `dark` property is not specified, dark mode is detected as per user system preferences.

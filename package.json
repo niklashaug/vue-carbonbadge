@@ -1,11 +1,19 @@
 {
   "name": "vue-carbonbadge",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Vue component for the Website Carbon Badge",
+  "author": "Niklas Haug",
+  "license": "MIT",
+  "keywords": ["vue", "vue-cli", "websitecarbon", "carbonbadge"],
+  "repository": "https://github.com/niklashaug/vue-carbonbadge",
+  "bugs": "https://github.com/niklashaug/vue-carbonbadge/issues",
+  "main": "./dist/vue-carbonbadge.common.js",
+  "private": false,
+  "files": ["dist/*"],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-package": "vue-cli-service build --target lib --name nameOfYourPackage ./src/index.js",
+    "build-package": "vue-cli-service build --target lib --name vue-carbonbadge ./src/install.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
