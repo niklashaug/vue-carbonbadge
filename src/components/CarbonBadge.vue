@@ -11,10 +11,8 @@ export default {
       default: window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
     }
   },
-  mounted () {
-    const script = document.createElement('script')
-    script.setAttribute('src', 'https://unpkg.com/website-carbon-badges@1.1.1/b.min.js')
-    document.head.appendChild(script)
+  async mounted () {
+    await import('website-carbon-badges/b.min')
   }
 }
 </script>

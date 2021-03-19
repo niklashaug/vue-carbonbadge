@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <CarbonBadge></CarbonBadge>
   </div>
 </template>
 
 <script>
+import CarbonBadge from "@/components/CarbonBadge"
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    CarbonBadge
+  }
 }
 </script>
 
