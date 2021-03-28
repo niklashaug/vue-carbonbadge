@@ -12,7 +12,8 @@ export default {
     }
   },
   async mounted () {
-    await import('website-carbon-badges/b.min')
+    const websitecarbon = await import(/* webpackMode: "eager" */ 'website-carbon-badges/b.min')
+    console.log(websitecarbon)
   }
 }
 </script>
