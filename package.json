@@ -1,6 +1,6 @@
 {
   "name": "vue-carbonbadge",
-  "version": "1.0.1-beta.2",
+  "version": "1.0.1",
   "description": "Vue component for the Website Carbon Badge",
   "author": "Niklas Haug",
   "license": "MIT",
@@ -26,7 +26,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.12",
-    "website-carbon-badges": "^1.1.2"
+    "website-carbon-badges": "^1.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
