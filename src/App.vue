@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <CarbonBadge :dark="true"></CarbonBadge>
+    <CarbonBadge></CarbonBadge>
   </div>
 </template>
 
