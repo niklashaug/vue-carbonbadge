@@ -2,8 +2,13 @@
 Vue component for the [Website Carbon badge](https://www.websitecarbon.com/badge/).
 
 ## Installation
+**via npm**
 ```shell
 npm install vue-carbonbadge
+```
+
+**or via yarn**
+```shell
 yarn add vue-carbonbadge
 ```
 
