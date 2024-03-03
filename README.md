@@ -26,7 +26,7 @@ yarn add vue-carbonbadge
 ## Customization
 **Toggling dark mode**
 ```html
-<CarbonBadge :dark="true"></CarbonBadge>
+<CarbonBadge :dark="true" />
 ```
 
 If the `dark` property is not specified, dark mode is detected as per user system preferences.
