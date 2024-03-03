@@ -1,3 +1,3 @@
-import CarbonBadge from "./components/CarbonBadge.vue"
+import CarbonBadge from "./components/CarbonBadge.vue";
 
 export default CarbonBadge;
