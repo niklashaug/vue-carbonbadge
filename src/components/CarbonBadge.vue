@@ -1,13 +1,20 @@
 <script setup lang="ts">
+  const props = defineProps<{
+    dark?: boolean
+  }>();
+
   import {onMounted, ref} from "vue";
 
-  const darkModeInitialState = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-  const darkMode = ref(darkModeInitialState)
+  const darkColorSchemaMediaQuery = window?.matchMedia('(prefers-color-scheme: dark)')
+  const userDefinedDarkProperty = props.dark !== undefined;
+  const darkMode = ref(userDefinedDarkProperty ? props.dark : darkColorSchemaMediaQuery?.matches)
 
   // launch listener
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e =>
-      darkMode.value = e.matches
-  )
+  if (darkColorSchemaMediaQuery) {
+    darkColorSchemaMediaQuery?.addEventListener('change', e =>
+        darkMode.value = e.matches
+    )
+  }
 
  onMounted(() => {
    /*@ts-ignore*/
