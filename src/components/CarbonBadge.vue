@@ -1,28 +1,37 @@
+<script setup lang="ts">
+const props = withDefaults(
+  defineProps<{
+    dark?: boolean;
+  }>(),
+  {
+    dark: undefined,
+  },
+);
+
+import { onMounted, ref } from "vue";
+
+const darkColorSchemaMediaQuery = window?.matchMedia(
+  "(prefers-color-scheme: dark)",
+);
+const userDefinedDarkProperty = props.dark !== undefined;
+const darkMode = ref(
+  userDefinedDarkProperty ? props.dark : darkColorSchemaMediaQuery?.matches,
+);
+
+// launch listener
+if (!userDefinedDarkProperty && darkColorSchemaMediaQuery) {
+  darkColorSchemaMediaQuery?.addEventListener(
+    "change",
+    (e) => (darkMode.value = e.matches),
+  );
+}
+
+onMounted(() => {
+  /*@ts-ignore*/
+  import("website-carbon-badges/b.min");
+});
+</script>
+
 <template>
   <div id="wcb" :class="[darkMode ? 'wcb-d' : '', 'carbonbadge']"></div>
 </template>
-
-<script>
-export default {
-  name: 'CarbonBadge',
-  data () {
-    return {
-      darkMode: this.dark
-    }
-  },
-  props: ['dark'],
-  async mounted () {
-    await import(/* webpackMode: "eager" */ 'website-carbon-badges/b.min')
-
-    if(this.dark === undefined) {
-      // set dark mode automatically
-      this.darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-
-      // launch listener
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e =>
-        this.darkMode = e.matches
-      )
-    }
-  }
-}
-</script>

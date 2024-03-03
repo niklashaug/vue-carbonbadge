@@ -1,27 +1,9 @@
-<template>
-  <div id="app">
-    <CarbonBadge></CarbonBadge>
-  </div>
-</template>
-
-<script>
-import CarbonBadge from "@/components/CarbonBadge"
-
-export default {
-  name: 'App',
-  components: {
-    CarbonBadge
-  }
-}
+<script setup lang="ts">
+import HelloWorld from "./components/HelloWorld.vue";
+import CarbonBadge from "./components/CarbonBadge.vue";
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<template>
+  <HelloWorld msg="vue-carbonbadge" />
+  <CarbonBadge />
+</template>
