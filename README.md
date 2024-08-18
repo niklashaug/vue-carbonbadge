@@ -13,6 +13,7 @@ yarn add vue-carbonbadge
 ```
 
 ## Usage
+### Vue 3
 ```vue
 <template>
     <CarbonBadge />
@@ -20,6 +21,20 @@ yarn add vue-carbonbadge
 
 <script setup>
     import CarbonBadge from "vue-carbonbadge";
+</script>
+```
+
+### Nuxt 3
+In Nuxt, you need to wrap the component in a `<ClientOnly>` component to prevent the badge from being rendered on the server:
+```vue
+<template>
+  <ClientOnly>
+    <CarbonBadge/>
+  </ClientOnly>
+</template>
+
+<script setup>
+  import CarbonBadge from "vue-carbonbadge"
 </script>
 ```
 
