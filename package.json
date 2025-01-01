@@ -18,7 +18,8 @@
   "exports": {
     ".": {
       "import": "./dist/vue-carbonbadge.js",
-      "require": "./dist/vue-carbonbadge.js"
+      "require": "./dist/vue-carbonbadge.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
