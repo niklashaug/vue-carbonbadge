@@ -17,9 +17,9 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/vue-carbonbadge.js",
-      "require": "./dist/vue-carbonbadge.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/vue-carbonbadge.js"
     }
   },
   "files": [
