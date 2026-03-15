@@ -11,7 +11,10 @@
     "websitecarbon",
     "carbonbadge"
   ],
-  "repository": "https://github.com/niklashaug/vue-carbonbadge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niklashaug/vue-carbonbadge.git"
+  },
   "bugs": "https://github.com/niklashaug/vue-carbonbadge/issues",
   "main": "./dist/vue-carbonbadge.umd.cjs",
   "module": "./dist/vue-carbonbadge.js",
