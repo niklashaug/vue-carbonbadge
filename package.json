@@ -20,7 +20,7 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/vue-carbonbadge.js",
-      "require": "./dist/vue-carbonbadge.js"
+      "require": "./dist/vue-carbonbadge.umd.cjs"
     }
   },
   "files": [
