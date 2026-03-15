@@ -35,8 +35,10 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "vue": "^3.5.13",
     "website-carbon-badges": "^1.1.3"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
@@ -46,6 +48,7 @@
     "typescript": "^5.7.2",
     "vite": "^6.0.6",
     "vite-plugin-dts": "^4.4.0",
+    "vue": "^3.5.30",
     "vue-tsc": "^2.2.0"
   },
   "volta": {
