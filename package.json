@@ -1,5 +1,6 @@
 {
   "name": "vue-carbonbadge",
+  "private": false,
   "version": "2.0.1",
   "description": "Vue component for the Website Carbon Badge",
   "author": "Niklas Haug",
@@ -26,7 +27,7 @@
     "dist",
     "src"
   ],
-  "private": false,
+  "sideEffects": false,
   "type": "module",
   "scripts": {
     "dev": "vite",
