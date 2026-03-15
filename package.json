@@ -24,8 +24,7 @@
     }
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "sideEffects": false,
   "type": "module",
