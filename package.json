@@ -1,7 +1,7 @@
 {
   "name": "vue-carbonbadge",
   "private": false,
-  "version": "2.0.3-0",
+  "version": "2.1.0",
   "description": "Vue component for the Website Carbon Badge",
   "author": "Niklas Haug",
   "license": "MIT",
