@@ -5,7 +5,15 @@ import { resolve } from "node:path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), dts()],
+  plugins: [
+    vue(),
+    dts({
+      include: ["src/index.ts", "src/components/**/*.vue"],
+      exclude: ["src/main.ts", "src/App.vue", "src/components/HelloWorld.vue"],
+      insertTypesEntry: true,
+      rollupTypes: false,
+    }),
+  ],
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
